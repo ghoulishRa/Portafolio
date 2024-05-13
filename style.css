@@ -191,7 +191,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin:6vh 1rem;
-
 }
   
 .about-container{
@@ -240,7 +239,23 @@ a:hover {
     align-items: center;
     gap: 1rem;
     margin: 20px;
+}
 
+.titles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.2rem;
+  margin: 10px auto;
+  border-radius: 100%;
+
+}
+.date{
+  display: flex;
+  flex-direction: column;
+}
+.date span{
+  color: #FF6969;
 }
 
 .projects-section{
@@ -256,6 +271,9 @@ a:hover {
     border-color: rgba(255, 255, 255,0);
     background: #EEF5FF;
     box-shadow: 0 0 10px rgb(120, 120, 120); 
+    background-image: radial-gradient(rgb(150,150,150) 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
   }
   
   .project-title {
@@ -299,6 +317,7 @@ a:hover {
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    background-color: #EEF5FF;
 }
 
 .skills-section{
