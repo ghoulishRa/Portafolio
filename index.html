@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="mediaqueries.css" />  -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav> -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/profile-pic.jpg" alt="profile picture" class ="profile-pic"/> 
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Israel Macías</h1>
+        <p class="section__text__p2">Robotics and Digital Systems Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color"
+            onclick="window.open('./assets/Resume.pdf')">
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/israel-mac%C3%ADas-santana-818a24204/?locale=en_US">
+            <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon-1"
+            />
+          </a>
+          <img
+           src="./assets/github.png"
+           alt="My Github profile"
+           class="icon-2"
+           onclick="location.href='https://github.com/ghoulishRa'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1>About me</h1>
+      <div class="about-container">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon-1"
+              />
+              <h3>Experience</h3>
+              <p> I’m interested 
+                in getting new experience in embedded systems 
+                or in the digital 
+                systems design fields.
+                <br/></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/tec.png"
+                alt="Education icon"
+                class="icon-1"
+              />
+              <h3>Education</h3>
+              <p>Studying Robotics Engineering at Tecnológico de Monterrey<br/></p>
+            </div>
+      </div>
+      <div class="text-container">
+        <p>
+          My goal is to acquire new knowledge 
+          in the design of <span>embedded systems</span> or <span>digital systems</span> fields.
+        </p>
+        <p>
+          I am a senior student in B.Sc in Robotics and Digital Systems Engineering.
+          I am a flexible, responsive and resilient person able to adapt to new work environments. 
+          My passion for art has led me to explore creative solutions to problems 
+          that I have been through.
+        </p>
+        
+      </div>
+    </section>
+    <section id="skills">
+      <h1>
+          Programming Languages
+      </h1>
+      <div class="skills-section">
+        <div class="skill">
+          <img class="icon-language"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png"
+          />
+          <p>
+            Embedded C
+          </p>
+          <p>
+            <span>Intermediate</span>
+          </p>
+        </div>
+        <div class="skill">
+          <img class="icon-language"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+          />
+          <p>
+            Python
+          </p>
+          <p>
+            <span>Intermediate</span>
+          </p>
+        </div>
+        <div class="skill">
+          <img class="icon-language"
+          src="assets/Matlab.png" 
+          />
+          <p>
+            Matlab
+          </p>
+          <p>
+            <span>Intermediate</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h1>
+          Development Platforms
+      </h1>
+      <div class="skills-section">
+        <div class="skill">
+          <img class="icon-language"
+          src="https://www.st.com/content/dam/st-crew/developer-zone/cube-ide/image%20268%403x.png"
+          />
+          <p>
+            STM32
+          </p>
+        </div>
+        <div class="skill">
+          <img class="icon-language"
+          src="https://roboticsbackend.com/wp-content/uploads/2022/04/ros_logo.png"
+          />
+          <p>
+            ROS2
+          </p>
+        </div>
+        <div class="skill">
+          <img class="icon-language"
+          src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/SBC-NODEMCU-ESP32-01.png" 
+          />
+          <p>
+            ESP32
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1>
+        School Projects
+      </h1>
+      <div class="projects-section">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title"> Advanced embedded vehicle steering control design </h2>
+          <div class="description">
+            <p> 
+               Designed a vehicle steering control system for a toy car, simulating a 
+               steer by wire system. For the project I used a <span>32-bit</span> microcontroller based 
+               on an <span>ARM</span> architecture. 
+            </p>
+            <p>
+              It included several communication protocols to connect 
+               different sensors such as <span>Serial</span>, <span>CAN</span>, <span>IIC</span> and <span>SPI</span>. The motor had an absolute encoder 
+               sensor to check the wheels position and an IMU to receive and analyze the frequency 
+               vibrations in order to identify potential disturbances. An OLED display was used as
+               user interface. Also it had an <span>ESP32</span> to communicate the system to a mobile dashboard.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/lBRXK4nIyMw'"
+              ><img src="assets/Youtube_logo.png" height="20px" width="30px"/>
+              </button>
+              <button
+              class="btn btn-color-1 project-btn"
+              onclick="location.href='https://github.com/ghoulishRa/Portafolio/blob/main/Embedded%20system/final_code.c'"
+              >
+              Github
+              </button>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="card">
+                <img src="assets/carrito.jpg"/>
+            </div>
+            <div class="card">
+                <img src="assets/carrito-2.PNG"/>
+            </div>
+            <div class="card">
+                <img src="assets/system.jpg"/>
+            </div>
+          </div>   
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">FPGA embedded system</h2>
+          <div class="description">
+            <p> 
+              Designed an embedded system based on an <span>FPGA</span> to recreate an analog controller 
+              for a videogame. The project implemented an 8-bit analog sensor controller to play 
+              the classic Atari breakout game on a PC. It has a serial communication protocol to connect 
+              the FPGA to an external computer. The lives  were shown on a VGA monitor. 
+              This project was presented to <span>INTEL</span>.
+            </p>
+            
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/w5ghfsem6Ck?si=yd-tCDxPHRcMOBic'"
+              ><img src="assets/Youtube_logo.png" height="20px" width="30px"/>
+              </button>
+              <button
+              class="btn btn-color-1 project-btn"
+              onclick="location.href='https://github.com/ghoulishRa/Portafolio/tree/main/FPGA/Reto'"
+              >
+              Github
+              </button>
+            </div>
+            <div class="slider">
+              <div class="card">
+                  <img src="assets/fpga-2.png"/>
+              </div>
+              <div class="card">
+                  <img src="assets/fpga-1.png"/>
+              </div>
+              <div class="card">
+                  <img src="assets/fpga-3.png"/>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">ROS2 Puzzlebot</h2>
+          <div class="description">
+            <p> 
+              Coming soon...
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/qnV3MN93H00'"
+              ><img src="assets/Youtube_logo.png" height="20px" width="30px"/>
+              </button>
+              <button
+              class="btn btn-color-1 project-btn"
+              onclick="location.href='https://github.com/ghoulishRa/Intelligent-Robotics-Implementation-TE3002B/tree/main/Labs/Lab%208_Pathtracking_Algorithms'"
+              >
+              Github
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Electric Current Monitoring System</h2>
+          <div class="description">
+            <p>
+              Designed a system capable of monitoring the current consumption of any appliance to 
+              generate an approximate energy expenditure report. The project implemented an 8-bit 
+              <span>Atmel</span> microcontroller to design the system and several analog and digital sensors, 
+              such as current sensors, a Bluetooth module, a LCD display and a computer to show the report receipt.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/Uz7eHRbaP0k'"
+              ><img src="assets/Youtube_logo.png" height="20px" width="30px"/>
+              </button>
+              <button
+              class="btn btn-color-1 project-btn"
+              onclick="location.href='https://github.com/ghoulishRa/Portafolio/blob/main/On%20chip%20design/Reto_final.c'"
+              >
+              Github
+              </button>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="card">
+                <img src="assets/sistema_en_chip_2.jpg"/>
+            </div>
+            <div class="card">
+                <img src="assets/sistema_en_chip.jpg"/>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:isra.macias.santana@gmail.com
+            ">
+            isra.macias.santana@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
